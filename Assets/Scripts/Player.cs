@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿ using System.Collections.Generic;
 using UnityEngine;
 
 namespace BigPlane {
@@ -38,6 +37,7 @@ namespace BigPlane {
 
         private Collider2D m_collider;
         private Animator m_animator;
+        private Rigidbody2D m_rigidbody2D;
 
         private bool isDead = false;
 
@@ -52,6 +52,7 @@ namespace BigPlane {
         private void Awake() {
             m_collider = GetComponent<PolygonCollider2D>();
             m_animator = GetComponent<Animator>();
+            m_rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
 
@@ -108,14 +109,8 @@ namespace BigPlane {
         private void Update() {
             if (isDead) return;
 
-            float x = Input.GetAxis("Horizontal");
-            float y = Input.GetAxis("Vertical");
 
-            Vector3 speed = new Vector3(x, y, 0);
-
-            Vector3 MoveTarget = transform.localPosition + speed * Time.deltaTime * moveSpeed;
-
-            transform.localPosition = MoveTarget;
+            MoveControll();
             shootTime += Time.deltaTime;
             if (shootTime > shootInterval) {
                 shootTime -= shootInterval;
@@ -123,6 +118,17 @@ namespace BigPlane {
                 Shoot();
             }
 
+        }
+
+
+        void MoveControll() {
+            float x = Input.GetAxis("Horizontal");
+            float y = Input.GetAxis("Vertical");
+
+            Vector3 moveDir = new Vector3(x, y, 0);
+            m_rigidbody2D.velocity = moveDir * moveSpeed;
+            //Vector3 MoveTarget = transform.localPosition + speed * Time.deltaTime * moveSpeed;
+            //transform.localPosition = MoveTarget;
         }
 
 

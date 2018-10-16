@@ -1,0 +1,148 @@
+ (0,0): Unity incremental compiler server
+ (0,0): watchdog active on pid: 15736
+ (0,0): [10-16-2018 11:37:21.037 上午] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 11:37:21.053 上午] Unity.TextMeshPro.dll compiling...
+ (0,0): [10-16-2018 11:37:21.062 上午] UnityEditor.StandardEvents.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 11:37:21.074 上午] UnityEditor.StandardEvents.dll compiling...
+ (0,0): [10-16-2018 11:37:21.087 上午] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 11:37:21.099 上午] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [10-16-2018 11:37:24.078 上午] UnityEditor.StandardEvents.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\UnityEditor.StandardEvents.dll
+ (0,0): [10-16-2018 11:37:24.096 上午] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [10-16-2018 11:37:24.164 上午] UnityEditor.StandardEvents.dll compilation finished in 3090ms  source files re-parsed: 1 metadata reloaded: 203
+ (0,0): [10-16-2018 11:37:24.238 上午] Unity.PackageManagerUI.Editor.dll compilation finished in 3139ms  source files re-parsed: 44 metadata reloaded: 183
+ (0,0): [10-16-2018 11:37:24.416 上午] Unity.TextMeshPro.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Unity.TextMeshPro.dll
+ (0,0): [10-16-2018 11:37:24.483 上午] Unity.TextMeshPro.dll compilation finished in 3429ms  source files re-parsed: 45 metadata reloaded: 203
+ (0,0): [10-16-2018 11:37:24.927 上午] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 11:37:24.939 上午] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [10-16-2018 11:37:25.244 上午] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [10-16-2018 11:37:25.376 上午] Unity.TextMeshPro.Editor.dll compilation finished in 437ms  source files re-parsed: 39 metadata reloaded: 1
+ (0,0): [10-16-2018 11:37:27.114 上午] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 11:37:27.126 上午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 11:37:27.153 上午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 11:37:27.188 上午] Assembly-CSharp.dll compilation finished in 62ms  source files re-parsed: 8 metadata reloaded: 3
+ (0,0): [10-16-2018 11:42:17.517 上午] Compiler cache size is now 14.96 MB
+ (0,0): [10-16-2018 11:57:46.199 上午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 11:57:46.241 上午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 11:57:46.254 上午] Assembly-CSharp.dll compilation finished in 54ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 11:57:46.266 上午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 11:59:24.212 上午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 11:59:24.243 上午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 11:59:24.275 上午] Assembly-CSharp.dll compilation finished in 62ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 11:59:24.287 上午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:03:38.551 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:03:38.578 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:03:38.611 下午] Assembly-CSharp.dll compilation finished in 60ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:03:38.623 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:04:02.513 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:04:02.546 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:04:02.578 下午] Assembly-CSharp.dll compilation finished in 64ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:04:02.590 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:04:46.490 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:04:46.521 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:04:46.552 下午] Assembly-CSharp.dll compilation finished in 61ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:04:46.564 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:12:23.931 下午] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 12:12:23.949 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:12:23.993 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:12:24.034 下午] Assembly-CSharp.dll compilation finished in 84ms  source files re-parsed: 9 metadata reloaded: 0
+ (0,0): [10-16-2018 12:12:35.767 下午] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 12:12:35.779 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:12:35.810 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:12:35.846 下午] Assembly-CSharp.dll compilation finished in 67ms  source files re-parsed: 9 metadata reloaded: 0
+ (0,0): [10-16-2018 12:13:44.805 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:13:44.837 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:13:44.872 下午] Assembly-CSharp.dll compilation finished in 68ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:13:44.884 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:16:47.343 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:16:47.374 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:16:47.414 下午] Assembly-CSharp.dll compilation finished in 70ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:16:47.425 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:17:20.318 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:17:20.347 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:17:20.380 下午] Assembly-CSharp.dll compilation finished in 62ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:17:20.392 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:18:07.019 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:18:07.055 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:18:07.092 下午] Assembly-CSharp.dll compilation finished in 72ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:18:07.104 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:18:38.579 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:18:38.615 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:18:38.648 下午] Assembly-CSharp.dll compilation finished in 67ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:18:38.659 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:19:21.243 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:19:21.276 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:19:21.313 下午] Assembly-CSharp.dll compilation finished in 69ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:19:21.325 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:19:47.332 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:19:47.363 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:19:47.394 下午] Assembly-CSharp.dll compilation finished in 61ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:19:47.406 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:19:57.970 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:19:58.004 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:19:58.038 下午] Assembly-CSharp.dll compilation finished in 67ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:19:58.050 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:25:30.070 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:25:30.101 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:25:30.139 下午] Assembly-CSharp.dll compilation finished in 68ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:25:30.151 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:34:40.111 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:34:40.143 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:34:40.181 下午] Assembly-CSharp.dll compilation finished in 70ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:34:40.193 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:35:20.502 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:35:20.532 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:35:20.571 下午] Assembly-CSharp.dll compilation finished in 68ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:35:20.583 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:35:38.065 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:35:38.094 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:35:38.133 下午] Assembly-CSharp.dll compilation finished in 68ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [10-16-2018 12:35:38.146 下午] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:36:30.189 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:36:30.220 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:36:30.256 下午] Assembly-CSharp.dll compilation finished in 67ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:36:30.268 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:38:59.938 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:38:59.979 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:39:00.020 下午] Assembly-CSharp.dll compilation finished in 81ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:39:00.032 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:40:04.149 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:40:04.187 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:40:04.222 下午] Assembly-CSharp.dll compilation finished in 73ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:40:04.234 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:40:21.538 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:40:21.567 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:40:21.599 下午] Assembly-CSharp.dll compilation finished in 60ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:40:21.609 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:40:49.693 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:40:49.721 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:40:49.752 下午] Assembly-CSharp.dll compilation finished in 58ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:40:49.763 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:43:24.879 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:43:24.910 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:43:24.951 下午] Assembly-CSharp.dll compilation finished in 71ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:43:24.962 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:44:25.896 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:44:25.930 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:44:25.965 下午] Assembly-CSharp.dll compilation finished in 69ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:44:25.977 下午] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10-16-2018 12:47:39.409 下午] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 12:47:39.421 下午] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [10-16-2018 12:47:39.446 下午] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 12:47:39.458 下午] Unity.TextMeshPro.dll compiling...
+ (0,0): [10-16-2018 12:47:39.583 下午] UnityEditor.StandardEvents.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 12:47:39.595 下午] UnityEditor.StandardEvents.dll compiling...
+ (0,0): [10-16-2018 12:47:39.641 下午] UnityEditor.StandardEvents.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\UnityEditor.StandardEvents.dll
+ (0,0): [10-16-2018 12:47:39.720 下午] Unity.PackageManagerUI.Editor.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [10-16-2018 12:47:39.725 下午] UnityEditor.StandardEvents.dll compilation finished in 130ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10-16-2018 12:47:39.831 下午] Unity.PackageManagerUI.Editor.dll compilation finished in 410ms  source files re-parsed: 44 metadata reloaded: 0
+ (0,0): [10-16-2018 12:47:40.153 下午] Unity.TextMeshPro.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Unity.TextMeshPro.dll
+ (0,0): [10-16-2018 12:47:40.236 下午] Unity.TextMeshPro.dll compilation finished in 778ms  source files re-parsed: 45 metadata reloaded: 0
+ (0,0): [10-16-2018 12:47:40.697 下午] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 12:47:40.710 下午] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [10-16-2018 12:47:40.929 下午] Unity.TextMeshPro.Editor.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [10-16-2018 12:47:41.066 下午] Unity.TextMeshPro.Editor.dll compilation finished in 356ms  source files re-parsed: 39 metadata reloaded: 1
+ (0,0): [10-16-2018 12:47:41.293 下午] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [10-16-2018 12:47:41.305 下午] Assembly-CSharp.dll compiling...
+ (0,0): [10-16-2018 12:47:41.333 下午] Assembly-CSharp.dll: emitting IL to : D:\Documents\UnityProjects\BigPlane\Temp\Assembly-CSharp.dll
+ (0,0): [10-16-2018 12:47:41.363 下午] Assembly-CSharp.dll compilation finished in 58ms  source files re-parsed: 9 metadata reloaded: 3
+ (0,0): watchdog triggered an exit
