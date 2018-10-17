@@ -174,7 +174,7 @@ MonoBehaviour:
   m_moveSpeed: 5
   m_emitter: {fileID: 4562197309089274}
   m_relationType: 0
-  m_shootInterval: 0.15
+  m_shootInterval: 1
   canAutoShoot: 1
   m_bullet: {fileID: 114778857966338668, guid: b7c05b3c5f401cc43b021ac977da8550, type: 2}
   moveSize: {x: 2, y: 3.2}

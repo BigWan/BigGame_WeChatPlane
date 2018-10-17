@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7cf1760453bc594a897dd9161b9ab31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_text: {fileID: 114286963370500108}
+  m_Title: {fileID: 114286963370500108}
   m_slider: {fileID: 114331900376492808}
   m_value: {fileID: 114523435916528970}
 --- !u!222 &222003840055269008

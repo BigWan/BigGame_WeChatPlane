@@ -1,0 +1,8 @@
+//Key,Value
+// Plane Rate
+SmallPlaneProp,0.65
+BigPlaneProp,0.2
+LargePlaneProp,0.1
+// AI
+AutoShootProp,0.3
+AutoChangeDirProp,0.3

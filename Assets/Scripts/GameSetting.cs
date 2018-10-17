@@ -16,6 +16,7 @@ namespace BigPlane {
         static GameSetting() {
             setting = new Dictionary<string, string>();
             TextAsset text = Resources.Load<TextAsset>(settingFileName);
+            Debug.Assert(text != null,"没有独到配置文件");
             setting = SimpleCsv.OpenCsvAsKV(text);
         }
 
@@ -24,6 +25,13 @@ namespace BigPlane {
                 return setting[key];
             else
                 return string.Empty;
+        }
+
+        public static void UpdateValue(string key,string value) {
+            if (setting.ContainsKey(key))
+                setting[key] = value;
+            else
+                setting.Add(key, value);
         }
     }
 

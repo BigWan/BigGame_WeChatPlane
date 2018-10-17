@@ -36,18 +36,18 @@ namespace BigPlane {
 
         // 敌机
         [SerializeField]private Enermy m_smallEnermy;
-        [SerializeField]private float m_smallEnermyProp;
+        private float m_smallEnermyProp;
 
         [SerializeField]private Enermy m_bigEnermy;
-        [SerializeField]private float m_bigEnermyProp;
+        private float m_bigEnermyProp;
 
         [SerializeField]private Enermy m_largeEnermy;
-        [SerializeField]private float m_largeEnermyProp;
+        private float m_largeEnermyProp;
 
         [SerializeField] private Transform m_spwanPoint;
 
-        [SerializeField]private float m_autoShootProp;
-        [SerializeField]private float m_changeDirProp;
+        private float m_autoShootProp;
+        private float m_changeDirProp;
 
 
         [Header("道具")]
@@ -106,9 +106,17 @@ namespace BigPlane {
             CreateRef<Player>(ref m_player, m_playerPrefab);
 
             //m_player.Init(m_background, m_boundary);
-
+            ReadData();
         }
 
+
+        public void ReadData() {
+            m_smallEnermyProp = float.Parse(GameSetting.GetSetting("SmallPlaneProp"));
+            m_bigEnermyProp = float.Parse(GameSetting.GetSetting("BigPlaneProp"));
+            m_largeEnermyProp = float.Parse(GameSetting.GetSetting("LargePlaneProp"));
+            m_autoShootProp = float.Parse(GameSetting.GetSetting("AutoShootProp"));
+            m_changeDirProp = float.Parse(GameSetting.GetSetting("AutoChangeDirProp"));
+        }
 
         private void Update() {
             m_lastSpawnTime += Time.deltaTime;

@@ -15,9 +15,13 @@ namespace BigPlane {
 
         protected override void Update() {
             base.Update();
+                        
+        }
+
+        private void FixedUpdate() {
             if (m_isDead) return;
 
-            Move();            
+            Move();
         }
 
 
