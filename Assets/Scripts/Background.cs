@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,18 +29,19 @@ namespace BigPlane {
         }
 
         private void Awake() {
-            SetTilePosition();
+            moveSpeed = moveSpeed <= 0 ? 5f : moveSpeed;
+            InitTilePosition();
         }
 
 
-        void SetTilePosition() {
+        void InitTilePosition() {
+            
             tileA.transform.localPosition = Vector3.zero;
             tileB.transform.localPosition = Vector3.up * tileHeight;
 
         }
 
         void BGMove() {
-
             Vector3 offset = Vector3.down * moveSpeed * Time.deltaTime;
 
             tileA.transform.Translate(offset, Space.World);
@@ -58,29 +60,6 @@ namespace BigPlane {
 
 
 
-#if UNITY_EDITOR
-        private void OnDrawGizmos() {
-
-            float width = bgHeight/16f*9f;
-
-            Vector2 size = new Vector2(width*0.5f, bgHeight*0.5f);
-            Vector3 p00 = new Vector3( - size.x, - size.y);
-            Vector3 p10 = new Vector3( + size.x, - size.y);
-            Vector3 p01 = new Vector3( - size.x,  + size.y);
-            Vector3 p11 = new Vector3( + size.x,  + size.y);
-
-
-
-            Gizmos.color = Color.green;
-
-
-            Gizmos.DrawLine(p00, p10);
-            Gizmos.DrawLine(p10, p11);
-            Gizmos.DrawLine(p11, p01);
-            Gizmos.DrawLine(p01, p00);
-
-        }
-#endif
 
     }
 }

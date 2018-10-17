@@ -6,131 +6,55 @@ namespace BigPlane {
     /// <summary>
     /// 玩家控制的飞机
     /// </summary>
-    [RequireComponent(typeof(SpriteRenderer))]
-    [RequireComponent(typeof(Animator))]
-    [RequireComponent(typeof(Collider2D))]
-    public class Player : MonoBehaviour {
+
+    public class Player : Plane {
 
         [Header("Config")]
 
-        public Transform emitter;
+        public Vector2 moveSize; // TODO:需要和摄像机设定这个值
 
-        [SerializeField]  Bullet bullet;
+        protected override void Update() {
+            base.Update();
+            if (m_isDead) return;
 
-        /// <summary>
-        /// 移动速度
-        /// </summary>
-        public float moveSpeed;
-        /// <summary>
-        /// 射击间隔
-        /// </summary>
-        [SerializeField] float shootInterval = 0.05f;
-
-
-        [Header("Info Show")]
-
-        public Background background;
-        [SerializeField]  Bomb Bomb;
-
-
-        [Header("Components")]
-
-        private Collider2D m_collider;
-        private Animator m_animator;
-        private Rigidbody2D m_rigidbody2D;
-
-        private bool isDead = false;
-
-        /// <summary>
-        /// 设置子弹
-        /// </summary>
-        public void SetBullet(Bullet bullet) {
-            this.bullet = bullet;
+            Move();            
         }
 
 
-        private void Awake() {
-            m_collider = GetComponent<PolygonCollider2D>();
-            m_animator = GetComponent<Animator>();
-            m_rigidbody2D = GetComponent<Rigidbody2D>();
-        }
-
-
-        private void Shoot() {
-            SpawnBullet();
-        }
-
-
-
-        void SpawnBullet() {
-            Bullet sb = Instantiate<Bullet>(bullet);
-            sb.transform.localPosition = emitter.position;
-            
-            sb.SetMoveDir(Vector3.up);
-        }
-
-
-
-        /// <summary>
-        /// 碰撞处理
-        /// 碰到
-        /// 子弹
-        /// 道具
-        /// 敌机
-        /// </summary>
-        /// <param name="collision"></param>
-        private void OnTriggerEnter2D(Collider2D collision) {
-            if (collision.CompareTag("Enermy")) 
-                OnTriggerEnermy(collision.GetComponent<Enermy>());
-            
-            if(collision.CompareTag("Bullet"))
-                OnTriggerBullet(collision.GetComponent<Bullet>());
-
-            if (collision.CompareTag("Item"))
-                OnTriggerItem(collision.GetComponent<Item>());
-
-        }
-
-
-        void OnTriggerEnermy(Enermy enermy) {
-
-        }
-
-        void OnTriggerBullet(Bullet bullet) {
-            isDead = true;
-            m_animator.SetBool("b_Dead", true);
-        }
-
-        void OnTriggerItem(Item item) {
-
-        }
-
-        private float shootTime;
-        private void Update() {
-            if (isDead) return;
-
-
-            MoveControll();
-            shootTime += Time.deltaTime;
-            if (shootTime > shootInterval) {
-                shootTime -= shootInterval;
-
-                Shoot();
-            }
-
-        }
-
-
-        void MoveControll() {
+        private void Move() {
             float x = Input.GetAxis("Horizontal");
             float y = Input.GetAxis("Vertical");
 
             Vector3 moveDir = new Vector3(x, y, 0);
-            m_rigidbody2D.velocity = moveDir * moveSpeed;
-            //Vector3 MoveTarget = transform.localPosition + speed * Time.deltaTime * moveSpeed;
-            //transform.localPosition = MoveTarget;
+            m_rigidbody2D.velocity = moveDir * m_moveSpeed;
+
+            m_rigidbody2D.position = new Vector3(
+                Mathf.Clamp( m_rigidbody2D.position.x, -moveSize.x, moveSize.x),
+                Mathf.Clamp( m_rigidbody2D.position.y, -moveSize.y, moveSize.y),
+                0
+                );
         }
 
+        /// <summary>
+        /// 碰到子弹
+        /// </summary>
+        /// <param name="bullet"></param>
+        protected override void OnTriggerBullet(Bullet bullet) {
+            if (!CompareRelation(bullet.relationType)) {
+                Die();
+            }
+        }
+
+        /// <summary>
+        /// 碰到飞机
+        /// </summary>
+        /// <param name="enermy"></param>
+        protected override void OnTriggerPlane(Plane enermy) {
+            Debug.Break();
+            if (!enermy.CompareRelation(RelationType.Player)) {
+                Die();
+            }
+        }
 
     }
 }

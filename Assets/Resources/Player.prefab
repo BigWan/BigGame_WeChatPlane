@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1726757710530120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.07, y: -1.07, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4562197309089274}
@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1971733394846108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0.026, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4333282084845342}
@@ -87,12 +87,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 0
 --- !u!60 &60329416203792004
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -102,7 +102,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -117,9 +117,31 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5, y: -0.3}
-      - {x: 0, y: 0.6}
-      - {x: 0.5, y: -0.3}
+    - - {x: 0.36595514, y: -0.31677866}
+      - {x: 0.28611323, y: -0.32378912}
+      - {x: 0.22668523, y: -0.21560836}
+      - {x: 0.1891273, y: -0.20720029}
+      - {x: 0.13463663, y: -0.31982994}
+      - {x: -0.09007211, y: -0.32736826}
+      - {x: -0.16471757, y: -0.2234652}
+      - {x: -0.22988121, y: -0.24833965}
+      - {x: -0.25746575, y: -0.327106}
+      - {x: -0.35778928, y: -0.33303547}
+      - {x: -0.36138335, y: -0.043969393}
+      - {x: -0.35446253, y: 0.17673755}
+      - {x: -0.2654518, y: 0.18715763}
+      - {x: -0.26218745, y: 0.052469492}
+      - {x: -0.12885863, y: 0.21442199}
+      - {x: -0.115006134, y: 0.45353556}
+      - {x: -0.058744293, y: 0.5553994}
+      - {x: 0.005935028, y: 0.59748054}
+      - {x: 0.08737226, y: 0.53645015}
+      - {x: 0.13385747, y: 0.4335575}
+      - {x: 0.13964768, y: 0.21093178}
+      - {x: 0.2712265, y: 0.050217867}
+      - {x: 0.28101146, y: 0.1779902}
+      - {x: 0.36656165, y: 0.1798513}
+      - {x: 0.37217444, y: -0.051318884}
 --- !u!95 &95483774340609226
 Animator:
   serializedVersion: 3
@@ -149,11 +171,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f56e7c431b86c594f93cf9a1648de35f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emitter: {fileID: 4562197309089274}
-  background: {fileID: 0}
-  moveSpeed: 5
-  shootInterval: 0.05
-  bullet: {fileID: 114778857966338668, guid: b7c05b3c5f401cc43b021ac977da8550, type: 2}
+  m_moveSpeed: 5
+  m_emitter: {fileID: 4562197309089274}
+  m_relationType: 0
+  m_shootInterval: 0.15
+  canAutoShoot: 1
+  m_bullet: {fileID: 114778857966338668, guid: b7c05b3c5f401cc43b021ac977da8550, type: 2}
+  moveSize: {x: 2, y: 3.2}
 --- !u!212 &212853823233448534
 SpriteRenderer:
   m_ObjectHideFlags: 1

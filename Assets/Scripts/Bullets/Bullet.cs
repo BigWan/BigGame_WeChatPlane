@@ -26,7 +26,11 @@ namespace BigPlane {
         /// </summary>
         private Vector3 moveDir;
 
-        
+        public RelationType relationType { get; set; }
+        /// <summary>
+        /// 子弹的威力
+        /// </summary>
+        public int power;
 
         public void SetMoveDir(Vector3 moveDir) {
             this.moveDir = moveDir;

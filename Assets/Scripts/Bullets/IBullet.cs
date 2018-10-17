@@ -13,7 +13,11 @@ namespace BigPlane {
         L = 2
     }
 
-
+    public enum RelationType : byte {
+        Player = 0,
+        Enermy = 1,
+        Other = 2
+    }
 
     /// <summary>
     /// 子弹接口

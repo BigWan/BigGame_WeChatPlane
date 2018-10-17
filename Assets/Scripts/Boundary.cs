@@ -1,22 +1,59 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Boundary : MonoBehaviour {
 
-    private void Awake() {
-        GetComponent<BoxCollider2D>().isTrigger = true;
+
+
+    public float xMin {
+        get {
+            return m_boxCollider2D.bounds.min.x;
+        }
     }
+
+    public float xMax {
+        get {
+            return m_boxCollider2D.bounds.max.x;
+        }
+    }
+
+    public float yMin {
+        get {
+            return m_boxCollider2D.bounds.min.y;
+        }
+    }
+
+    public float yMax {
+        get {
+            return m_boxCollider2D.bounds.max.y;
+        }
+    }
+
+    private BoxCollider2D m_boxCollider2D;
+
+    private void Awake() {
+        m_boxCollider2D = GetComponent<BoxCollider2D>();
+        m_boxCollider2D.isTrigger = true;
+
+    }
+
+
+
+
 
     /// <summary>
     /// 消除子弹
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerExit2D(Collider2D other) {
+        Debug.Log(other.name);
         if (other.CompareTag("Bullet")) {
             Destroy(other.gameObject);
         }
     }
+
 
 #if UNITY_EDITOR
     private void OnDrawGizmos() {
@@ -28,7 +65,6 @@ public class Boundary : MonoBehaviour {
         Vector3 p01 = new Vector3(center.x - size.x, center.y + size.y);
         Vector3 p11 = new Vector3(center.x + size.x, center.y + size.y);
 
-        Debug.Log(p00);
 
 
         Gizmos.color = Color.red;
@@ -40,5 +76,7 @@ public class Boundary : MonoBehaviour {
         Gizmos.DrawLine(p01, p00);
 
     }
+
+
 #endif
 }
