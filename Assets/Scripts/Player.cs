@@ -1,5 +1,7 @@
 ﻿ using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+
 
 namespace BigPlane {
 
@@ -15,28 +17,52 @@ namespace BigPlane {
 
         protected override void Update() {
             base.Update();
-                        
-        }
-
-        private void FixedUpdate() {
             if (m_isDead) return;
-
-            Move();
+            if (GameManager.instance.IsPlaying())
+                SnapMove();
         }
 
 
+        /// <summary>
+        /// 设置射击速度
+        /// </summary>
+        public void SetShootSpeed() {
+            m_shootInterval = float.Parse(GameSetting.GetSetting("ShootSpeed"));
+        }
+
+        /// <summary>
+        /// 操作移动
+        /// </summary>
         private void Move() {
             float x = Input.GetAxis("Horizontal");
             float y = Input.GetAxis("Vertical");
 
             Vector3 moveDir = new Vector3(x, y, 0);
-            m_rigidbody2D.velocity = moveDir * m_moveSpeed;
+            transform.Translate(moveDir * m_moveSpeed * Time.deltaTime);
 
-            m_rigidbody2D.position = new Vector3(
-                Mathf.Clamp( m_rigidbody2D.position.x, -moveSize.x, moveSize.x),
-                Mathf.Clamp( m_rigidbody2D.position.y, -moveSize.y, moveSize.y),
+            transform.localPosition = new Vector3(
+                Mathf.Clamp( transform.localPosition.x, -moveSize.x, moveSize.x),
+                Mathf.Clamp(transform.localPosition.y, -moveSize.y, moveSize.y),
                 0
                 );
+        }
+
+
+        void SnapMove() {
+
+            if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject()) {
+                Vector3 moveDir = (Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position));
+                Vector2 moveDir2 = new Vector2(moveDir.x, moveDir.y);
+                if (moveDir2.magnitude < 50f) return;
+                transform.Translate(moveDir2.normalized * m_moveSpeed *2f * Time.deltaTime);
+
+                transform.localPosition = new Vector3(
+                    Mathf.Clamp(transform.localPosition.x, -moveSize.x, moveSize.x),
+                    Mathf.Clamp(transform.localPosition.y, -moveSize.y, moveSize.y),
+                    0
+                    );
+            }
+
         }
 
         /// <summary>
@@ -48,6 +74,14 @@ namespace BigPlane {
                 Die();
             }
         }
+
+        ///// <summary>
+        ///// 子弹射中敌机事件
+        ///// </summary>
+        ///// <param name="enermy"></param>
+        //protected override void OnBulletHit(Enermy enermy) {
+            
+        //}
 
         /// <summary>
         /// 碰到飞机

@@ -6,3 +6,4 @@ LargePlaneProp,0.1
 // AI
 AutoShootProp,0.3
 AutoChangeDirProp,0.3
+ShootSpeed,0.1

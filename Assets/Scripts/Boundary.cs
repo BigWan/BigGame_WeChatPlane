@@ -43,16 +43,19 @@ public class Boundary : MonoBehaviour {
 
 
 
-    /// <summary>
-    /// 消除子弹
-    /// </summary>
-    /// <param name="other"></param>
-    private void OnTriggerExit2D(Collider2D other) {
-        Debug.Log(other.name);
-        if (other.CompareTag("Bullet")) {
-            Destroy(other.gameObject);
-        }
-    }
+    ///// <summary>
+    ///// 消除子弹
+    ///// </summary>
+    ///// <param name="other"></param>
+    //private void OnTriggerExit2D(Collider2D other) {
+    //    if (other.CompareTag("Bullet")) {
+    //        Destroy(other.gameObject);
+    //    }
+
+    //    if (other.CompareTag("Enermy")) {
+    //        Destroy(other.gameObject);
+    //    }
+    //}
 
 
 #if UNITY_EDITOR

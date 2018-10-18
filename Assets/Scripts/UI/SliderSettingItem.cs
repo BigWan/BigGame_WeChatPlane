@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace BigPlane {
 
-    public class SliderSetting : MonoBehaviour {
+    public class SliderSettingItem : MonoBehaviour {
 
 
         [SerializeField] private Text m_Title;

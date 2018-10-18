@@ -15,7 +15,7 @@ namespace BigPlane {
 
         [SerializeField] private int m_hp;
 
-        [SerializeField] private int m_score;
+        public int killScore;
 
         public bool canChangeMoveDir;
 
@@ -23,6 +23,7 @@ namespace BigPlane {
 
         private Player m_player;
 
+        
         protected override void Awake() {
             base.Awake();
             m_moveDir = Vector3.down;
@@ -30,7 +31,7 @@ namespace BigPlane {
         }
 
         /// <summary>
-        /// 碰到在子弹
+        /// 碰到子弹
         /// </summary>
         /// <param name="bullet"></param>
         protected override void OnTriggerBullet(Bullet bullet) {
@@ -43,10 +44,7 @@ namespace BigPlane {
                 }
             }
 
-
         }
-
-
 
 
         protected override void Update() {
@@ -64,8 +62,8 @@ namespace BigPlane {
         }
 
 
-        float aimInterval = 2f;
-        float lastTurnTime = 1f;
+        [SerializeField]float aimInterval = 4f;
+        float lastTurnTime = 2f;
         /// <summary>
         /// 改变朝向
         /// </summary>
@@ -79,6 +77,15 @@ namespace BigPlane {
 
         private void Hit() {
             m_animator.SetTrigger("t_Hit");
+        }
+
+        public override void Die() {
+            base.Die();
+            GameManager.instance.AddScore(killScore);
+        }
+
+        protected override void OnTriggerBoundary() {
+            Destroy(gameObject);
         }
     }
 }
